@@ -25,10 +25,9 @@ class: center, middle, title
 
 <img src="./images/four.jpg" width="200px">
 
-- 野生程序员
 - [Flask](https://github.com/pallets/flask) 维护者
 - 《[Flask Web 开发实战](http://helloflask.com/book/)》作者
-- [HelloFlask](http://helloflask.com) 管理员
+- 微软 Python 方向 MVP
 - 个人网站 [greyli.com](http://greyli.com)
 
 ---
@@ -38,38 +37,7 @@ class: center, middle
 
 ---
 
-## Python Web API 开发入门
-
-install
-```bash
-$ pip install flask
-```
-
---
-
-code
-```python
-# app.py
-from flask import Flask
-app = Flask(__name__)
-
-@app.route('/')
-def hello():
-    return 'Hello, <a href="https://cn.pycon.org">PyCon China</a>!'
-```
-
---
-
-run
-```bash
-$ flask run
- ...
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-```
-
----
-
-## Python Web API 开发入门
+## Python Web API
 
 install
 ```bash
@@ -98,33 +66,6 @@ $ flask run
 
 ## Python Web API
 
-install
-```bash
-$ pip install flask
-```
-
-code
-```python
-# app.py
-from flask import Flask
-app = Flask(__name__)
-
-@app.route('/')
-def hello():
-*   return {'message': 'Hello!'}
-```
-
-run
-```bash
-$ flask run
- ...
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-```
-
----
-
-## 一分钟入门 Python Web API 开发
-
 install [HTTPie](https://httpie.org/)
 ```bash
 $ pip install httpie
@@ -142,29 +83,6 @@ Server: Werkzeug/0.15.6 Python/3.6.8
 {
     "message": "Hello!"
 }
-```
-
----
-
-## 一分钟入门 Python Web API 开发
-
-install [HTTPie](https://httpie.org/)
-```bash
-$ pip install httpie
-```
-
-test
-```bash
-$ http get :5000
-HTTP/1.0 200 OK
-Content-Length: 54
-*Content-Type: application/json
-Date: Tue, 17 Sep 2019 01:10:24 GMT
-Server: Werkzeug/0.15.6 Python/3.6.8
-
-*{
-*   "message": "Hello!"
-*}
 ```
 
 ---
@@ -205,16 +123,16 @@ class: center, middle, inverse
 
 <img src="./images/wechat.png" width="200px">
 
-- email: withlihui@gmail.com
-- website: [greyli.com](http://greyli.com)
-- slides: [github.com/greyli/gotc](https://github.com/greyli/gotc)
+- Email: withlihui@gmail.com
+- Website: [greyli.com](http://greyli.com)
+- Slides: [github.com/greyli/gotc](https://github.com/greyli/gotc)
 
     </textarea>
     <script src="js/remark.min.js">
     </script>
     <script>
       var slideshow = remark.create({
-        ratio: '16:9',
+        ratio: '4:3',
         highlightStyle: 'monokai',
         highlightLines: true,
         slideNumberFormat: '',
